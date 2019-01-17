@@ -4,10 +4,13 @@ using namespace std;
 
 int main()
 {
-	int num[5]={1,2,3,4,5};
+	int num[5];
 	int* ptr=num;
-
-	for(int x=0;x<5;x++)
+	
+	cout<<"Enter 5 numbers: "<<endl;
+	cin>>num[0]>>num[1]>>num[2]>>num[3]>>num[4];
+	cout<<"Your inputs are: "<<endl;
+	for(int x=1;x<=5;x++)
 	{
 	cout<<*ptr<<endl;
 	ptr++;
